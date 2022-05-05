@@ -11,6 +11,13 @@ class UserService{
     static updateUsername(user, userName){
         user.userName = userName
     }
+    static getAllUserNames(users){
+        const userNames = []
+        for(let i in users){
+            userNames.push(users[i].userName)
+        }
+        return userNames
+    }
 }
 
 module.exports = UserService
