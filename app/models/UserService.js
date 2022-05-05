@@ -8,6 +8,9 @@ class UserService{
         this.user = [user.id, user.userName, user.name, user.bio]
         return this.user
     }
+    static updateUsername(user, userName){
+        user.userName = userName
+    }
 }
 
 module.exports = UserService
