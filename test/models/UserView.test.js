@@ -24,5 +24,15 @@ describe('Unit Test for User View class', () => {
 
         //Validate Values
         expect(result.error).toMatch(/missing property/)
+    });
+    test('Create a User with payload', () =>{
+        //Create valid object
+        const payload = {usernName: 'User name', name: 'Name', id: 1}
+        const user = UserView.createUser(payload)
+
+        //Validate values
+        expect(user.name).toBe('name');
+        expect(user.id).toBe(1);
+        expect(user.usernName).toBe('User name');
     })
 })
