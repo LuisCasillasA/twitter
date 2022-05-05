@@ -18,9 +18,20 @@ describe('Unit Test for User class', () => {
         const user = new User(1, 'LuisCasillasA', 'Luis', 'Bio')
 
         //Test getters
-        expect(user.getUserName()).toBe('LuisCasillasA');
-        expect(user.getBio()).toBe('Bio');
-        expect(user.getDateCreated()).not.toBeUndefined();
-        expect(user.getLastUpdate()).not.toBeUndefined();
-    })
+        expect(user.getUserName).toBe('LuisCasillasA');
+        expect(user.getBio).toBe('Bio');
+        expect(user.getDateCreated).not.toBeUndefined();
+        expect(user.getLastUpdate).not.toBeUndefined();
+    });
+    test('Add Setters', () =>{
+        //Instance User
+        const user = new User(1, 'LuisCasillasA', 'Luis', 'Bio')
+
+        //Test Setters
+        user.setUserName = 'LuisCasillas'
+        expect(user.userName).toBe('LuisCasillas');
+
+        user.setBio = 'New Bio'
+        expect(user.bio).toBe('New Bio')
+    });
 })

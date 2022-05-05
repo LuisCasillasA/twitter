@@ -7,17 +7,23 @@ class User{
         this.dateCreated = new Date()
         this.lastUpdate = new Date()
     }
-    getUserName(){
+    get getUserName(){
         return this.userName
     }
-    getBio(){
+    get getBio(){
         return this.bio
     }
-    getDateCreated(){
+    get getDateCreated(){
         return this.dateCreated
     }
-    getLastUpdate(){
+    get getLastUpdate(){
         return this.lastUpdate
+    }
+    set setUserName(userName){
+        this.userName = userName
+    }
+    set setBio(bio){
+        this.bio = bio
     }
 }
 
