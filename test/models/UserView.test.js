@@ -17,4 +17,12 @@ describe('Unit Test for User View class', () => {
         //Validate values
         expect(result.error).toMatch(/you need to have a valid value/);
     });
+    test('3. Return an error object when try to create a new user with a paylod with missing properties', () =>{
+        //Create object with a payload with invalid property
+        const payload = {usernName: 'LuisCasillasA'}
+        const result  = UserView.createUser(payload)
+
+        //Validate Values
+        expect(result.error).toMatch(/missing property/)
+    })
 })
