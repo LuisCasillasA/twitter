@@ -15,6 +15,6 @@ describe('Unit Test for User View class', () => {
         const result  = UserView.createUser(payload)
 
         //Validate values
-        expect(result.error).toMatch(/you need to have a valid value/)
+        expect(result.error).toMatch(/you need to have a valid value/);
     });
 })
