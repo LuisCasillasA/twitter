@@ -1,0 +1,22 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "Week 3 Models",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisCasillasA/twitter.git"
+  },
+  "author": "LuisCasillasA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisCasillasA/twitter/issues"
+  },
+  "homepage": "https://github.com/LuisCasillasA/twitter#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
