@@ -21,5 +21,11 @@ describe('Unit Test for User Service class', () => {
         expect(userInfoList[1]).toBe('LuisCasillasA');
         expect(userInfoList[2]).toBe('Luis');
         expect(userInfoList[3]).toBe('Sin Bio');
+    });
+    test('3. Update username', () =>{
+        //Create object
+        const user = UserService.create(1, 'LuisCasillasA', 'Luis')
+        UserService.updateUsername(user, 'LuisAcevedo')
+        expect(user.userName).toBe('LuisAcevedo')
     })
 })
